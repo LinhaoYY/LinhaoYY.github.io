@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<!-- Head tag -->
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!--Description-->
+  
+  <meta name="description" content="林大宝的博客">
+  
+
+  <!--Author-->
+  
+  <meta name="author" content="John Doe">
+  
+
+  <!--Open Graph Title-->
+  
+      <meta property="og:title" content="flex布局">
+  
+  <!--Open Graph Description-->
+  
+      <meta property="og:description" content="林大宝的博客">
+  
+  <!--Open Graph Site Name-->
+  <meta property="og:site_name" content="林大宝的博客">
+  <!--Type page-->
+  
+      <meta property="og:type" content="article">
+  
+  <!--Page Cover-->
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- Title -->
+  
+  <title>flex布局 - 林大宝的博客</title>
+
+
+  <link rel="shortcut icon" href="https://oss-yaodz-source.oss-cn-beijing.aliyuncs.com/Linhao-Blog/tilte.png">
+
+  <!-- Custom CSS/Sass -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!----------------------------
+  https://github.com/GallenHu/hexo-theme-Daily
+
+ _____            _   _
+|  __ \          (_) | |
+| |  | |   __ _   _  | |  _   _
+| |  | |  / _` | | | | | | | | |
+| |__| | | (_| | | | | | | |_| |
+|_____/   \__,_| |_| |_|  \__, |
+                          __/ |
+                         |___/
+
+    --------------------------->
+
+</head>
+
+
+<body>
+
+  <!-- Nav -->
+  <header class="site-header">
+  <div class="header-inside">
+    <div class="logo">
+      <a href="/" rel="home">
+        
+        <img src="https://oss-yaodz-source.oss-cn-beijing.aliyuncs.com/Linhao-Blog/gen.svg" alt="林大宝的博客" height="60">
+        
+      </a>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse">
+        <ul class="navbar-nav">
+          
+          
+            <li>
+              <a href="/.">
+                
+                  主页
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="/archives">
+                
+                  归档
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="/about">
+                
+                  关于
+                
+              </a>
+            </li>
+          
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </nav>
+    <div class="button-wrap">
+      <button class="menu-toggle">Primary Menu</button>
+    </div>
+  </div>
+</header>
+
+
+  <!-- Main Content -->
+  <div class="content-area">
+  <div class="post">
+    <!-- Post Content -->
+    <div class="container">
+      <article>
+        <!-- Title date & tags -->
+        <div class="post-header">
+          <h1 class="entry-title">
+            flex布局
+            
+          </h1>
+          <p class="posted-on">
+          2019-07-15
+          </p>
+          <div class="tags-links">
+            
+              
+                <a href="/tags/flex布局样式/" rel="tag">
+                  flex布局样式
+                </a>
+              
+            
+          </div>
+        </div>
+        <!-- Post Main Content -->
+        <div class="entry-content has_line_number">
+          <p>Flexbox 的弹性布局方式，可以简洁快速的实现我想要的布局样式。</p>
+<a id="more"></a>
+
+<h1 id="简介："><a href="#简介：" class="headerlink" title="简介："></a>简介：</h1><p>Flexbox 是 CSS Flexible Box Layout Module 的常用名称，这是一种用于在单个维度（行或列）中显示项目的布局模型。</p>
+<p>在规范中，Flexbox 被描述为用户界面设计的布局模型。 Flexbox 的关键特性是 flex 布局中的项目可以增大和缩小。可以将空间（Space）分配到项目本身、项目之间或项目周围。</p>
+<p>Flexbox 还可以对齐主轴或交叉轴上的项目，从而提供对一组项目大小和对齐的高级控制。</p>
+<h2 id="flex-html-样式"><a href="#flex-html-样式" class="headerlink" title="flex html 样式"></a>flex html 样式</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box-item"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="flex-的容器属性"><a href="#flex-的容器属性" class="headerlink" title="flex 的容器属性"></a>flex 的容器属性</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span>&#123;</span><br><span class="line">  //定义盒子模型</span><br><span class="line">  display: flex | inline-flex;  </span><br><span class="line"></span><br><span class="line">  //决定主轴的方向</span><br><span class="line">  flex-direction: row(默认) | row-reverse | column | column-reverse; </span><br><span class="line"></span><br><span class="line">  //项目排不下时，是否换行 </span><br><span class="line">  flex-wrap：nowrap(默认) | wrap | wrap-reverse;</span><br><span class="line"></span><br><span class="line">  //项目在主轴上的对齐方式</span><br><span class="line">  justify-content: flex-start(默认) | flex-end | center |space-between | space-around;</span><br><span class="line"></span><br><span class="line">  //多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用</span><br><span class="line">  align-content: stretch(默认,排满整个容器的height) | flex-start | flex-end | center | space-between | space-around;</span><br><span class="line"></span><br><span class="line">  //flex-direction属性和flex-wrap属性的简写形式</span><br><span class="line">  flex-flow: &lt;flex-direction&gt; &lt;flex-wrap&gt; | row nowrap; </span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="flex-的项目属性"><a href="#flex-的项目属性" class="headerlink" title="flex 的项目属性"></a>flex 的项目属性</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box-item</span>&#123;</span><br><span class="line">  //数值越小，排列越靠前</span><br><span class="line">  <span class="selector-tag">order</span>： 0(默认);</span><br><span class="line"></span><br><span class="line">  //项目的放大比例，即如果存在剩余空间，也不放大</span><br><span class="line">  <span class="selector-tag">flex-grow</span>： 0(默认);</span><br><span class="line"></span><br><span class="line">  //项目的缩小比例，即如果空间不足，该项目将缩小</span><br><span class="line">  <span class="selector-tag">flex-shrink</span>： 1(默认);</span><br><span class="line"></span><br><span class="line">  //在分配多余空间之前，项目占据的主轴空间。浏览器根据这个属性，计算主轴是否有多余空间。</span><br><span class="line">  //和width或height属性一样的值（比如350px），则项目将占据固定空间。</span><br><span class="line">  <span class="selector-tag">flex-basis</span>： <span class="selector-tag">auto</span>(默认，即原本大小);</span><br><span class="line"></span><br><span class="line">  //flex-grow, flex-shrink 和 flex-basis的简写</span><br><span class="line">  //两个快捷值：auto (1 1 auto) 和 none (0 0 auto)</span><br><span class="line">  <span class="selector-tag">flex</span>： 0 1 <span class="selector-tag">auto</span> (默认);</span><br><span class="line"></span><br><span class="line">  //单个项目有与其他项目不一样的对齐方式，可覆盖align-items属性。</span><br><span class="line">  //如果没有父元素，则等同于stretch</span><br><span class="line">  align-self：  auto(默认,继承父元素的align-items属性) | flex-start | flex-end | center | baseline | stretch;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        </div>
+      </article>
+    </div>
+    <!-- Comments -->
+    <div class="container">
+      
+<section id="comment">
+  <!-- <h1 class="title">留言</h1> -->
+
+  
+</section>
+
+
+    </div>
+    <!-- Pre or Next -->
+    <div class="nav-links">
+      
+        <div class="nav-previous">
+          <a href="/2019/07/24/hello-world/" rel="prev"><span class="meta-arraw meta-arraw-left"></span> 上一页</a>
+        </div>
+      
+      
+    </div>
+
+  </div>
+</div>
+
+
+  <!-- Footer -->
+  <!-- Footer-widgets -->
+<div class="footer-widgets">
+  <div class="row inside-wrapper">
+    <div class="col-1-3">
+      <aside>
+        <h1 class="widget-title">关于本站</h1>
+        <div class="custom-widget-content">
+          
+          林大宝的博客
+        </div>
+      </aside>
+    </div>
+    <div class="col-1-3">
+      <aside>
+        <h1 class="widget-title">与我联系</h1>
+        <div class="widget-text">
+          
+            
+              <a href="https://github.com/GallenHu" class="icon icon-github" target="_blank">github</a>
+            
+          
+        </div>
+      </aside>
+    </div>
+    <div class="col-1-3">
+      <aside>
+        <h1 class="widget-title">站内搜索</h1>
+        <div class="widget-text">
+          <form onSubmit="return appDaily.submitSearch('')">
+            <p>
+              <input type="text" placeholder="search..." id="homeSearchInput">
+            </p>
+            <!-- <input type="submit" value="GO"> -->
+          </form>
+        </div>
+      </aside>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="site-info">
+  <p>
+    <span>林大宝的博客 &copy; 2019</span>
+    
+      <span class="split">|</span>
+      <span>Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> with Theme <a href="https://github.com/GallenHu/hexo-theme-Daily" target="_blank">Daily</a></span>
+    
+  </p>
+</footer>
+
+
+  <!-- After footer scripts -->
+  <!-- scripts -->
+<script src="/js/app.js"></script>
+
+
+
+
+
+</body>
+
+</html>
